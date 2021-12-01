@@ -53,7 +53,7 @@ We used official Arcface per-trained pytorch [implementation](https://github.com
 Download pre-trained checkpoint from [onedrive](https://1drv.ms/u/s!AswpsDO2toNKq0lWY69vN58GR6mw?e=p9Ov5d) (IResNet-100 trained on MS1MV3)
 
 ### Download HifiFace Pre-Trained Model
-[google drive link](https://drive.google.com/drive/folders/1UPhZvYXlO5znPBAnIBDh2_w33Nw_9CMl?usp=sharing)
+[google drive link](https://drive.google.com/file/d/1tZitaNRDaIDK1MPOaQJJn5CivnEIKMnB/view?usp=sharing)
 trained on VGGFace2, 300K iterations
 
 ## Training
