@@ -52,5 +52,5 @@ RUN pip install imageio imageio-ffmpeg
 COPY nvdiffrast/nvdiffrast /tmp/pip/nvdiffrast/
 COPY nvdiffrast/README.md nvdiffrast/setup.py /tmp/pip/
 RUN cd /tmp/pip && pip install .
-COPY requirement.txt requirement.txt
-RUN pip install -r requirement.txt
+COPY requirements.txt requirements.txt
+RUN pip install -r requirements.txt
