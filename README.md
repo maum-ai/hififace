@@ -124,22 +124,22 @@ python hififace_trainer.py --model_config config/model.yaml --train_config confi
 ## Inference
 ### Single Image
 ```shell
-python hififace_inference --gpus 0 --model_config config/model.yaml --model_checkpoint_path hififace_opensouce_299999.ckpt --source_image_path asset/inference_sample/01_source.png --target_image_path asset/inference_sample/01_target.png --output_image_path ./01_result.png
+python hififace_inference --gpus 0 --model_config config/model.yaml --model_checkpoint_path hififace_opensouce_299999.ckpt --source_image_path assets/inference_samples/01_source.png --target_image_path assets/inference_samples/01_target.png --output_image_path ./01_result.png
 ```
 ### All Posible Pairs of Images in Directory 
 ```shell
-python hififace_inference --gpus 0 --model_config config/model.yaml --model_checkpoint_path hififace_opensouce_299999.ckpt  --input_directory_path asset/inference_sample --output_image_path ./result.png
+python hififace_inference --gpus 0 --model_config config/model.yaml --model_checkpoint_path hififace_opensouce_299999.ckpt  --input_directory_path assets/inference_samples --output_image_path ./result.png
 ```
 ### Interpolation
 ```shell
 # interpolates both the identity and the 3D shape.
-python hififace_inference --gpus 0 --model_config config/model.yaml --model_checkpoint_path hififace_opensouce_299999.ckpt --source_image_path asset/inference_sample/01_source.png --target_image_path asset/inference_sample/01_target.png --output_image_path ./01_result_all.gif  --interpolation_all 
+python hififace_inference --gpus 0 --model_config config/model.yaml --model_checkpoint_path hififace_opensouce_299999.ckpt --source_image_path assets/inference_samples/01_source.png --target_image_path assets/inference_samples/01_target.png --output_image_path ./01_result_all.gif  --interpolation_all 
 
 # interpolates only the identity.
-python hififace_inference --gpus 0 --model_config config/model.yaml --model_checkpoint_path hififace_opensouce_299999.ckpt --source_image_path asset/inference_sample/01_source.png --target_image_path asset/inference_sample/01_target.png --output_image_path ./01_result_identity.gif  --interpolation_identity
+python hififace_inference --gpus 0 --model_config config/model.yaml --model_checkpoint_path hififace_opensouce_299999.ckpt --source_image_path assets/inference_samples/01_source.png --target_image_path assets/inference_samples/01_target.png --output_image_path ./01_result_identity.gif  --interpolation_identity
 
 # interpolates only the 3D shape.
-python hififace_inference --gpus 0 --model_config config/model.yaml --model_checkpoint_path hififace_opensouce_299999.ckpt --source_image_path asset/inference_sample/01_source.png --target_image_path asset/inference_sample/01_target.png --output_image_path ./01_result_3d.gif  --interpolation_3d
+python hififace_inference --gpus 0 --model_config config/model.yaml --model_checkpoint_path hififace_opensouce_299999.ckpt --source_image_path assets/inference_samples/01_source.png --target_image_path assets/inference_samples/01_target.png --output_image_path ./01_result_3d.gif  --interpolation_3d
 
 ```
 ## Our Results
